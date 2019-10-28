@@ -1,4 +1,4 @@
-package com.yzy.p10;
+package com.yzy.leetcode.s10;
 
 import java.util.LinkedList;
 import java.util.List;

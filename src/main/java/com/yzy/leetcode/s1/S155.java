@@ -1,4 +1,4 @@
-package com.yzy.p1;
+package com.yzy.leetcode.s1;
 
 import java.util.Stack;
 

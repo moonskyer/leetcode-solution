@@ -1,6 +1,12 @@
-package com.yzy.p0;
+package com.yzy.leetcode.s0;
+
+import org.junit.Test;
+
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class S020 {
+
     public boolean isValid(String s) {
         if (s == null || "".equals(s))
             return true;
@@ -33,12 +39,13 @@ public class S020 {
         }
     }
 
-    public static void main(String[] args) {
-        S020 s020 = new S020();
-        System.out.println(s020.isValid("()"));
-        System.out.println(s020.isValid("()[]{}"));
-        System.out.println(s020.isValid("(]"));
-        System.out.println(s020.isValid("([)]"));
-        System.out.println(s020.isValid("{[]}"));
+    @Test
+    public void test() {
+        assertTrue(isValid("()"));
+        assertTrue(isValid("()[]{}"));
+        assertFalse(isValid("(]"));
+        assertFalse(isValid("([)]"));
+        assertTrue(isValid("{[]}"));
     }
+    
 }

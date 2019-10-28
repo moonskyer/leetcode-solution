@@ -1,4 +1,4 @@
-package com.yzy.p4;
+package com.yzy.leetcode.s4;
 
 import java.util.Arrays;
 import java.util.HashMap;

@@ -1,6 +1,6 @@
-package com.yzy.p1;
+package com.yzy.leetcode.s1;
 
-import com.yzy.common.TreeNode;
+import com.yzy.leetcode.common.TreeNode;
 
 import java.util.*;
 

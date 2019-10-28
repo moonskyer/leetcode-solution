@@ -1,4 +1,8 @@
-package com.yzy.p0;
+package com.yzy.leetcode.s0;
+
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class S071 {
     public String simplifyPath(String path) {
@@ -41,13 +45,13 @@ public class S071 {
         return sb.toString();
     }
 
-    public static void main(String[] args) {
-        S071 s071 = new S071();
-        System.out.println(s071.simplifyPath("/home/"));
-        System.out.println(s071.simplifyPath("/../"));
-        System.out.println(s071.simplifyPath("/home//foo/"));
-        System.out.println(s071.simplifyPath("/a/./b/../../c/"));
-        System.out.println(s071.simplifyPath("/a/../../b/../c//.//"));
-        System.out.println(s071.simplifyPath("/a//b////c/d//././/.."));
+    @Test
+    public void test() {
+        assertEquals("/home", simplifyPath("/home/"));
+        assertEquals("/", simplifyPath("/../"));
+        assertEquals("/home/foo", simplifyPath("/home//foo/"));
+        assertEquals("/c", simplifyPath("/a/./b/../../c/"));
+        assertEquals("/c", simplifyPath("/a/../../b/../c//.//"));
+        assertEquals("/a/b/c", simplifyPath("/a//b////c/d//././/.."));
     }
 }

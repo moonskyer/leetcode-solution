@@ -1,4 +1,4 @@
-package com.yzy.common;
+package com.yzy.leetcode.common;
 
 public class TreeNode {
     public int val;

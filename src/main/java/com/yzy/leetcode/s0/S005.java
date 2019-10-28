@@ -1,4 +1,4 @@
-package com.yzy.p0;
+package com.yzy.leetcode.s0;
 
 
 public class S005 {
